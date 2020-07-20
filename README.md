@@ -11,7 +11,9 @@
 ![效果](https://wx3.sinaimg.cn/large/0081fa71gy1ggxubw846fg30rs08ct8w.jpg)
 
 ## 安装
+```
 npm i vue-elementui-skeleton
+```
 
 ## 引入
 ```js
