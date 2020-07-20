@@ -1,0 +1,13 @@
+{
+  "name": "vue-elementui-skeleton",
+  "version": "1.0.0",
+  "description": "基于Vue+ElementUI的骨架屏",
+  "author": "康永敢",
+  "main": "src/index.js",
+  "homepage": "https://github.com/kangyonggan/vue-elementui-skeletion#readme",
+  "license": "ISC",
+  "keywords": [
+    "skeleton",
+    "骨架屏"
+  ]
+}
