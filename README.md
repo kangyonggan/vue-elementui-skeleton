@@ -8,7 +8,7 @@
 - ...
 
 ## 效果
-![效果](https://wx3.sinaimg.cn/large/0081fa71gy1ggxubw846fg30rs08ct8w.jpg)
+![效果](./demo.gif)
 
 ## 安装
 ```
@@ -120,4 +120,7 @@ el-table默认骨架屏的行数为5行，下例修改为10行。
 | radius | 圆角像素 | Number | - | 5 |
 | bg | 骨架背景色 | String | - | #eaebed |
 
-
+## 其他
+- 项目地址：[https://github.com/kangyonggan/vue-elementui-skeleton](https://github.com/kangyonggan/vue-elementui-skeleton)
+- 作者主页：[https://kangyonggan.com](https://kangyonggan.com)
+- 作者邮箱：java@kangyonggan.com

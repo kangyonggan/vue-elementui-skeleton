@@ -3,15 +3,15 @@ export default {
         let {directiveName = 'skeleton', rows = 5, radius = 5, bg = '#eaebed'} = opts
         Vue.directive(directiveName, {
             update: function (el, binding, vnode) {
-                let oldValue = binding.oldValue;
                 let value = binding.value;
                 if (typeof value !== 'object') {
                     value = {loading: value};
-                    oldValue = {loading: oldValue};
                 }
 
-                // loading从false变成true的时候画骨架
-                if (!oldValue.loading && value.loading) {
+                // loading为true并且el的data-skeleton="0"或者空的时候画骨架
+                if (value.loading && (!el.dataset.skeleton || el.dataset.skeleton === '0')) {
+                    el.dataset.skeleton = '1';
+
                     // el-table（自识别：宽度、列数、行高。可配置：行数、圆角、背景色）
                     if ('el-table' === vnode.componentOptions.tag) {
                         // 隐藏空数据提示
@@ -68,9 +68,10 @@ export default {
                             tbody.appendChild(tr);
                         }
                     }
-                }
-                // loading从true到false的时候删除骨架
-                if (oldValue.loading && !value.loading) {
+                } else if (!value.loading && el.dataset.skeleton === '1') {
+                    // loading为false并且el的data-skeleton="1"的时候删除骨架
+                    el.dataset.skeleton = '0';
+
                     // el-table
                     if ('el-table' === vnode.componentOptions.tag) {
                         let allSkeletons = el.querySelectorAll('.skeleton-tr');

@@ -4,7 +4,7 @@
   "description": "基于Vue+ElementUI的骨架屏",
   "author": "康永敢",
   "main": "src/index.js",
-  "homepage": "https://github.com/kangyonggan/vue-elementui-skeletion#readme",
+  "homepage": "https://github.com/kangyonggan/vue-elementui-skeleton#readme",
   "license": "ISC",
   "keywords": [
     "skeleton",
