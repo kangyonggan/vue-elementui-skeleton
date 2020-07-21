@@ -8,7 +8,7 @@
 - ...
 
 ## 效果
-<img src="https://wx3.sinaimg.cn/large/0081fa71gy1ggxubw846fg30rs08ct8w.gif" />
+![效果](https://wx3.sinaimg.cn/large/0081fa71gy1ggxubw846fg30rs08ct8w.gif)
 
 ## 安装
 ```
