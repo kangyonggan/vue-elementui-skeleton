@@ -1,6 +1,6 @@
 {
   "name": "vue-elementui-skeleton",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于Vue+ElementUI的骨架屏",
   "author": "康永敢",
   "main": "src/index.js",
