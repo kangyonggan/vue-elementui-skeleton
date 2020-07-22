@@ -56,13 +56,11 @@ export default {
                             tr.className = 'skeleton-tr el-table__row';
                             for (let j = 0; j < colsWidth.length; j++) {
                                 let td = document.createElement('td');
-                                let cell = document.createElement('div');
-                                cell.className = 'cell';
+                                td.className = 'cell';
                                 let div = document.createElement('div');
-                                div.style = 'background: ' + bg + ';border-radius: ' + radius + 'px;text-indent:-999px;width:' + (Math.random() * 50 + 30) + '%;';
+                                div.style = 'line-height:15px;margin:4px 0;background: ' + bg + ';border-radius: ' + radius + 'px;text-indent:-999px;width:' + (Math.random() * 50 + 30) + '%;';
                                 div.appendChild(document.createTextNode('.'));
-                                cell.appendChild(div);
-                                td.appendChild(cell);
+                                td.appendChild(div);
                                 tr.appendChild(td);
                             }
                             tbody.appendChild(tr);
